@@ -1,0 +1,111 @@
+body{
+    font-family: sans-serif;
+    color: #fff; 
+
+}
+
+.outer{
+  background-color: #000;
+  text-align: center;
+}
+
+.page{
+
+  max-width: 1400px;
+  width: 100%;
+  height: 900px;
+  display: inline-block;
+  background-color: #000;
+
+}
+
+/* Navigation bar */
+
+.topnav{
+  background-color: #000000;
+  height:100px;
+  color: #fff;
+  width: 100%;
+
+}
+
+
+/* Left part with hero image */
+
+.hero_content img{
+  width:100%;
+}
+
+.hero_text_headline{
+  font-size: 42px;
+  font-family: Bodoni Moda, serif;
+  font-weight: 300;
+  margin: 60px;
+
+}
+
+
+.hero_content_link{
+
+  border: 1px solid hsla(0,0%,100%,.4);
+  display: inline-block;
+  font-family: Noto Sans, sans-serif;
+  font-size: 14px;
+  letter-spacing: .05em;
+  line-height: 18px;
+  min-width: 200px;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff; 
+
+}
+
+.hero_content_link:hover {
+    border-color: darkgray;
+    transition: all .4s ease-in;
+}
+
+
+/* right part of website */
+
+.side_bar img{
+  float: right;
+}
+
+.sidebar_pics {
+  width: 100%;
+}
+
+.headline_right {
+
+  display: inline-block;
+  font-family: Bodoni Moda, serif;
+  font-size: 18px;
+  font-weight: 200;
+  margin-top: 30px;
+  letter-spacing: .05em;
+  line-height: 18px;
+  min-width: 200px;
+  padding-bottom: 34px;
+  text-align: left;
+  text-decoration: none;
+  color: #fff; 
+
+}
+
+.headline_right:hover {
+    color: darkgray;
+    transition: all .6s ease-in;
+    
+}
+
+.headline_right_center {
+  
+  font-size: 24px; 
+  padding-top: 20px;
+  padding-bottom: 24px;
+  text-align: left;
+
+}
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Erleben Sie die exklusive Dolce&Gabbana Kollektion.">
+    <meta name="keywords" content="Dolce&Gabbana, Luxus, Mode">
+    <title>Dolce&Gabbana - Luxury Fashion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            overflow-x: hidden; /* Verhindert horizontales Scrollen */
+            background-color: #000
+
+        }
+
+        .navbar {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr; /* Linke und rechte Spalten, mittige Logo-Spalte */
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #000; /* Hintergrundfarbe schwarz */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-left,
+        .navbar-right {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center; /* Zentriert die Inhalte in der Navigation */
+        }
+
+        .navbar-left a,
+        .navbar-right a {
+            color: white; /* Textfarbe weiß */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            position: relative;
+            line-height: 1.5; /* Gleiche Zeilenhöhe für die Ausrichtung */
+        }
+
+        .navbar-left a::after,
+        .navbar-right a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background-color: #fff; /* Hover Linie weiß */
+            bottom: -3px; /* Abstand zur Textzeile (angepasst auf -3px) */
+            left: 0;
+            transition: width 0.3s ease;
+        }
+
+        .navbar-left a:hover::after,
+        .navbar-right a:hover::after {
+            width: 100%;
+        }
+
+        .navbar-logo {
+            text-align: center;
+            grid-column: 2; /* Logo in der mittleren Spalte */
+        }
+
+        .navbar-logo img {
+            width: 240px; /* Doppelte Logo-Größe */
+            height: auto;
+        }
+
+        .navbar-right {
+            justify-content: flex-end; /* Sicherstellen, dass die rechte Navigation am rechten Rand ist */
+        }
+
+        /* Grid-Styling für den Content */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Zwei gleich große Spalten */
+            gap: 20px; /* Abstand zwischen den Spalten */
+            padding: 40px;
+
+        }
+
+        .grid-column {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .grid-column img {
+            width: 100%; /* Bild passt sich der Spalte an */
+            height: auto;
+        }
+
+        .headline {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+
+        .copy {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <!-- Links auf der linken Seite -->
+        <div class="navbar-left">
+            <a href="fashion.html">Women</a>
+            <a href="fashion.html">Men</a>
+            <a href="fashion.html">Casa</a>
+            <a href="fashion.html">Beauty</a>
+        </div>
+
+        <!-- Logo in der Mitte -->
+
+        <div class="navbar-logo">
+            <a href="index.html">
+            <img src="img/DG_logo_white.png" alt="Logo">
+            </a>
+        </div>
+
+
+
+        <!-- Links auf der rechten Seite -->
+        <div class="navbar-right">
+            <a href="fashion.html">Store Locator</a>
+            <a href="fashion.html">Login</a>
+            <a href="fashion.html">
+                <img src="img/search_white.png" alt="Cart" style="width: 24px; height: auto; margin-left: 15px; vertical-align: middle;">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Content-Bereich für Sardegna 2024 -->
+    <div class="content-grid">
+        <div class="grid-column">
+            <img src="img/sardegna1.jpg" alt="Sardegna 1">
+            <p class="headline">Sardegna 2024</p>
+            <p class="copy">Entdecken Sie die neue Kollektion, die von der Schönheit Sardiniens inspiriert ist.</p>
+        </div>
+        <div class="grid-column">
+            <img src="img/sardegna2.jpg" alt="Sardegna 2">
+            <p class="headline">Eleganz und Stil</p>
+            <p class="copy">Diese Kollektion verbindet Tradition mit modernem Luxus.</p>
+        </div>
+        <div class="grid-column">
+            <img src="img/sardegna3.jpg" alt="Sardegna 3">
+            <p class="headline">Einzigartige Designs</p>
+            <p class="copy">Jedes Stück ist ein Meisterwerk, das die Essenz der italienischen Kultur einfängt.</p>
+        </div>
+        <div class="grid-column">
+            <img src="img/sardegna4.jpg" alt="Sardegna 4">
+            <p class="headline">Kaffeepause in Stil</p>
+            <p class="copy">Genießen Sie Ihre Momente mit Stil und Eleganz.</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
